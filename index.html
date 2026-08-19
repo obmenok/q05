@@ -64,6 +64,8 @@
   /* === ИЗОБРАЖЕНИЯ === */
   img {
     max-width: 100%;
+    max-height: 90vh; /* Картинка не будет выше 90% высоты экрана браузера */
+    object-fit: contain; /* Гарантирует, что пропорции не исказятся при сжатии */
     height: auto;
     display: block;
     margin: 20px auto;
