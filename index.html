@@ -188,6 +188,30 @@
   .toc-container a:hover {
     text-decoration: underline;
   }
+/* === АДАПТАЦИЯ ДЛЯ СМАРТФОНОВ (Ширина экрана до 768px) === */
+  @media screen and (max-width: 768px) {
+    /* Увеличиваем шрифты для комфортного чтения */
+    body, p, li, td, th, div.body, div.section {
+      font-size: 16px !important; 
+      line-height: 1.5 !important;
+    }
+    
+    /* Пропорционально настраиваем заголовки */
+    h1 { font-size: 24px !important; }
+    h2 { font-size: 22px !important; }
+    h3 { font-size: 20px !important; }
+    h4 { font-size: 18px !important; }
+    
+    /* Таблицы не должны ломать экран */
+    table {
+      width: 100% !important;
+      word-break: break-word;
+    }
+    
+    /* Делаем боковые отступы компактнее для экономии места на экране */
+    body { padding: 15px; }
+    .topic-container, .toc-container { padding: 15px 20px; }
+  }
 </style>
 </head>
 <body>
